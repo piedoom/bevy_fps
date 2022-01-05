@@ -1,5 +1,6 @@
 use bevy::{prelude::*, render::camera::PerspectiveProjection};
 use bevy_rapier3d::{
+    na::Vector,
     physics::{ColliderBundle, ColliderPositionSync, RigidBodyBundle, RigidBodyPositionSync},
     prelude::{ColliderMaterial, ColliderShape, RigidBodyMassPropsFlags},
     render::ColliderDebugRender,
@@ -21,18 +22,19 @@ impl Plugin for CorePlugin {
 
 fn setup_system(
     mut cmd: Commands,
-    mut meshes: ResMut<Assets<Mesh>>,
-    mut materials: ResMut<Assets<StandardMaterial>>,
     mut scene_spawner: ResMut<SceneSpawner>,
+    mut physics_config: ResMut<bevy_rapier3d::physics::RapierConfiguration>,
     scene_handle: Res<Handle<DynamicScene>>,
 ) {
+    physics_config.gravity = Vector::z() * -9.81;
+
     /* Create the player. */
     let locked_dofs = RigidBodyMassPropsFlags::ROTATION_LOCKED_Y
         | RigidBodyMassPropsFlags::ROTATION_LOCKED_X
         | RigidBodyMassPropsFlags::ROTATION_LOCKED_Z;
 
     let rigid_body = RigidBodyBundle {
-        position: Vec3::new(0.0, 10.0, 0.0).into(),
+        position: Vec3::new(0.0, 0.0, 2.0).into(),
         mass_properties: locked_dofs.into(),
         ..Default::default()
     };
@@ -47,8 +49,8 @@ fn setup_system(
     };
     let player = cmd
         .spawn_bundle((
-            GlobalTransform::from_translation(Vec3::new(0f32, 2f32, 0f32)),
-            Transform::from_translation(Vec3::new(0f32, 2f32, 0f32)),
+            GlobalTransform::from_translation(Vec3::new(0f32, 0f32, 2f32)),
+            Transform::from_translation(Vec3::new(0f32, 0f32, 2f32)),
             Movement::default(),
             RigidBodyPositionSync::Discrete,
             Player,
@@ -58,39 +60,20 @@ fn setup_system(
         .id();
 
     // add the cameras as a child so we can rotate them independently
+    let mut trans = Transform::from_rotation(Quat::from_axis_angle(-Vec3::X, 90f32.to_radians()));
+    trans.translation += Vec3::new(0.0, 0.0, 2.0);
     cmd.entity(player).with_children(|parent| {
         parent.spawn_bundle(PerspectiveCameraBundle {
             perspective_projection: PerspectiveProjection {
-                fov: 90f32.to_radians(),
+                fov: 100f32.to_radians(),
                 near: 0.1f32,
                 ..Default::default()
             },
             // Put the camera slightly above the center so we are taller
-            transform: Transform::from_translation(Vec3::new(0.0, 2.0, 0.0)),
+            transform: trans,
             ..Default::default()
         });
     });
-
-    // let mesh = meshes.add(Mesh::from(shape::Box::new(10f32, 0.5, 10f32)));
-    // let material = materials.add(StandardMaterial {
-    //     base_color: Color::hex("ffd891").unwrap(),
-    //     // vary key PBR parameters on a grid of spheres to show the effect
-    //     unlit: true,
-    //     ..Default::default()
-    // });
-    // // ground
-    // let ground_collider = ColliderBundle {
-    //     shape: ColliderShape::cuboid(10.0, 0.1, 10.0),
-    //     ..Default::default()
-    // };
-    //  cmd.spawn_bundle(ground_collider)
-    //      .insert_bundle(PbrBundle {
-    //          mesh,
-    //          material,
-    //          ..Default::default()
-    //      })
-    //      .insert(ColliderDebugRender::from(Color::RED))
-    //      .insert(ColliderPositionSync::Discrete);
 
     scene_spawner.spawn_dynamic(scene_handle.clone());
 }

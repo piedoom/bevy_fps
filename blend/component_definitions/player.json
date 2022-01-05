@@ -2,6 +2,6 @@
     "name": "Player",
     "description": "Makes this object take input",
     "id": "player",
-    "struct": "fps::components::Player",
+    "struct": "fps::components::marker::Player",
     "fields": []
 }

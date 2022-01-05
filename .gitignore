@@ -1,1 +1,3 @@
 target
+.vscode
+blender_bevy_toolkit/blender_bevy_toolkit/*

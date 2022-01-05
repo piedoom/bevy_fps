@@ -43,13 +43,13 @@ fn player_look_input_system(
         // Update the `Fps` component with a new position based on the mouse delta
         movement.yaw += look_dir.x * window_scale * (movement.sensitivity / 1000f32);
         movement.pitch += look_dir.y * window_scale * (movement.sensitivity / 1000f32);
-        movement.pitch = movement.pitch.clamp(-89.9, 89.9);
+        movement.pitch = movement.pitch.clamp(-180f32, 0f32);
 
         // Apply the rotation to our camera
         let yaw_radians = movement.yaw.to_radians();
         let pitch_radians = movement.pitch.to_radians();
 
-        movement.rotation_yaw = Quat::from_axis_angle(Vec3::Y, -yaw_radians);
+        movement.rotation_yaw = Quat::from_axis_angle(Vec3::Z, -yaw_radians);
         movement.rotation_pitch = Quat::from_axis_angle(-Vec3::X, pitch_radians);
     });
 }
@@ -60,8 +60,8 @@ fn player_move_input_system(
 ) {
     let dir = keys.get_pressed().fold(Vec3::ZERO, |acc, k| {
         acc + match k {
-            KeyCode::W => -Vec3::Z,
-            KeyCode::S => Vec3::Z,
+            KeyCode::W => Vec3::Y,
+            KeyCode::S => -Vec3::Y,
             KeyCode::A => -Vec3::X,
             KeyCode::D => Vec3::X,
             _ => Vec3::ZERO,
@@ -97,35 +97,31 @@ fn apply_look_system(
 }
 
 /// Move the movements via the physics system
-fn apply_movement_system(
-    time: Res<Time>,
-    bodies: Query<(&mut RigidBodyVelocity, &Movement, &Children)>,
-    cameras: Query<&GlobalTransform, With<Camera>>,
-) {
+fn apply_movement_system(time: Res<Time>, bodies: Query<(&mut RigidBodyVelocity, &Movement)>) {
     // Combine the rotation of our camera with the forces we want to apply
-    bodies.for_each_mut(|(mut body, movement, children)| {
+    bodies.for_each_mut(|(mut body, movement)| {
         // Multiply our rotation by the new forward/strafe direction to get the final force
-        children.iter().for_each(|e| {
-            if let Ok(ct) = cameras.get(*e) {
-                let force: Vec3 = movement.facing().mul_vec3(movement.direction);
-                let scaled_force = force * movement.acceleration * time.delta_seconds();
-                body.linvel += Vector3::from(scaled_force);
-                if body.linvel.magnitude_squared() > movement.speed.powi(2) {
-                    // preserve y speed when clamping magnitude
-                    let fall_speed = body.linvel.y;
-                    body.linvel.set_magnitude(movement.speed);
-                    body.linvel.y = fall_speed;
-                }
-                return;
-            }
-        });
+        let force: Vec3 = movement.facing().mul_vec3(movement.direction);
+        let scaled_force = force * movement.acceleration * time.delta_seconds();
+
+        // TODO: Check the normal of the next collision surface before movement is applied and move to contact &
+        // adjust the slope as needed
+
+        body.linvel += Vector3::from(scaled_force);
+        if body.linvel.magnitude_squared() > movement.speed.powi(2) {
+            // preserve y speed when clamping magnitude
+            let fall_speed = body.linvel.z;
+            body.linvel.set_magnitude(movement.speed);
+            body.linvel.z = fall_speed;
+        }
+        return;
     });
 }
 
 fn apply_jump_system(movements: Query<(&mut RigidBodyVelocity, &Movement)>) {
     movements.for_each_mut(|(mut velocity, movement)| {
         if movement.wants_to_jump {
-            velocity.linvel += Vector3::from(Vec3::new(0.0, 1.0, 0.0));
+            velocity.linvel += Vector3::from(Vec3::new(0.0, 0.0, 1.0));
         }
     });
 }

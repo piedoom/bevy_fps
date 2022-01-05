@@ -3,99 +3,233 @@
     components:[
         {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
         {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube"}},
-        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\455a186f059b12261a1ddcfbbc376371.mesh"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
         {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_status":0,"damping_angular":{"type":"f32","value":0.0},"damping_linear":{"type":"f32","value":0.0},"ccd_enable":false,"sleep_allow":false,"mass_extra":{"type":"f32","value":0.0},"inertia_extra":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":0,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 4]>","list":[0,0,128,63]}}}
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[0,0,32,65,0,0,32,65,0,0,128,63]}}}
     ]
 ),(
     entity: 1,
     components:[
-        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-3.0,-14.0,14.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Sphere"}},
-        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\84222dfb324b543bb56b873d38c1a7aa.mesh"}},
-        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-3.0,-14.0,14.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_status":0,"damping_angular":{"type":"f32","value":0.0},"damping_linear":{"type":"f32","value":0.0},"ccd_enable":false,"sleep_allow":false,"mass_extra":{"type":"f32","value":0.0},"inertia_extra":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":1,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 8]>","list":[0,0,32,64,2,0,128,63]}}}
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-19.0,0.0,4.0)},"rotation":{"type":"glam::quat::Quat","value":(-1.819485851250308e-15,0.2164396196603775,2.9080576169349115e-08,0.9762960076332092)},"scale":{"type":"glam::vec3::Vec3","value":(0.9999999403953552,1.0,0.9999999403953552)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.001"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-19.0,0.0,4.0)},"rotation":{"type":"glam::quat::Quat","value":(-1.819485851250308e-15,0.2164396196603775,2.9080576169349115e-08,0.9762960076332092)},"scale":{"type":"glam::vec3::Vec3","value":(0.9999999403953552,1.0,0.9999999403953552)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[255,255,31,65,0,0,32,65,255,255,127,63]}}}
     ]
 ),(
     entity: 2,
     components:[
-        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-2.200000047683716,-11.899999618530273,16.0)},"rotation":{"type":"glam::quat::Quat","value":(-0.5735764503479004,-1.2735955631180138e-16,0.0,0.8191521763801575)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Sphere.001"}},
-        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\84222dfb324b543bb56b873d38c1a7aa.mesh"}},
-        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-2.200000047683716,-11.899999618530273,16.0)},"rotation":{"type":"glam::quat::Quat","value":(-0.5735764503479004,-1.2735955631180138e-16,0.0,0.8191521763801575)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_status":0,"damping_angular":{"type":"f32","value":0.0},"damping_linear":{"type":"f32","value":0.0},"ccd_enable":false,"sleep_allow":false,"mass_extra":{"type":"f32","value":0.0},"inertia_extra":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":1,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 8]>","list":[0,0,32,64,2,0,128,63]}}}
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-3.024171829223633,-6.404654026031494,19.114990234375)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Point"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-3.024171829223633,-6.404654026031494,19.114990234375)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
+        {"type":"bevy_pbr::light::Light","struct":{}}
     ]
 ),(
     entity: 3,
     components:[
-        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-5.555000305175781,7.26676607131958,9.390933990478516)},"rotation":{"type":"glam::quat::Quat","value":(-0.2837282717227936,0.24147158861160278,-0.08738618344068527,0.9238795638084412)},"scale":{"type":"glam::vec3::Vec3","value":(0.9999999403953552,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Sphere.002"}},
-        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\5370245833b708ae4df41387649ca8b1.mesh"}},
-        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-5.555000305175781,7.26676607131958,9.390933990478516)},"rotation":{"type":"glam::quat::Quat","value":(-0.2837282717227936,0.24147158861160278,-0.08738618344068527,0.9238795638084412)},"scale":{"type":"glam::vec3::Vec3","value":(0.9999999403953552,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_status":0,"damping_angular":{"type":"f32","value":0.0},"damping_linear":{"type":"f32","value":0.0},"ccd_enable":false,"sleep_allow":false,"mass_extra":{"type":"f32","value":0.0},"inertia_extra":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":1,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 8]>","list":[0,0,240,64,2,0,64,64]}}}
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-8.0,0.0,11.041401863098145)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.002"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-8.0,0.0,11.041401863098145)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[255,255,255,63,0,0,32,65,0,0,128,63]}}}
     ]
 ),(
     entity: 4,
     components:[
-        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(10.0,4.0,11.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Icosphere"}},
-        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\3d0ffeaa13a3792618ea01e89b241dd6.mesh"}},
-        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(10.0,4.0,11.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_status":0,"damping_angular":{"type":"f32","value":0.0},"damping_linear":{"type":"f32","value":0.0},"ccd_enable":false,"sleep_allow":false,"mass_extra":{"type":"f32","value":0.0},"inertia_extra":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":0,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 4]>","list":[0,0,64,64]}}}
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(8.0,0.0,11.041401863098145)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,0.6000000238418579,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.003"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(8.0,0.0,11.041401863098145)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,0.6000000238418579,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[255,255,255,63,0,0,192,64,0,0,128,63]}}}
     ]
 ),(
     entity: 5,
     components:[
-        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(7.0,-2.0,6.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Icosphere.001"}},
-        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\3d0ffeaa13a3792618ea01e89b241dd6.mesh"}},
-        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(7.0,-2.0,6.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_status":0,"damping_angular":{"type":"f32","value":0.0},"damping_linear":{"type":"f32","value":0.0},"ccd_enable":false,"sleep_allow":false,"mass_extra":{"type":"f32","value":0.0},"inertia_extra":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":0,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 4]>","list":[0,0,64,64]}}}
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(12.0,8.0,11.041401863098145)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,-0.7071068286895752,0.7071068286895752)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.8000000715255737,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.004"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(12.0,8.0,11.041401863098145)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,-0.7071068286895752,0.7071068286895752)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.8000000715255737,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[255,255,255,63,0,0,144,65,0,0,128,63]}}}
     ]
 ),(
     entity: 6,
     components:[
-        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(5.0,-6.0,14.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Icosphere.002"}},
-        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\3d0ffeaa13a3792618ea01e89b241dd6.mesh"}},
-        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(5.0,-6.0,14.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_status":0,"damping_angular":{"type":"f32","value":0.0},"damping_linear":{"type":"f32","value":0.0},"ccd_enable":false,"sleep_allow":false,"mass_extra":{"type":"f32","value":0.0},"inertia_extra":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":0,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 4]>","list":[0,0,64,64]}}}
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(12.0,-8.0,11.041401863098145)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,-0.7071068286895752,0.7071068286895752)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.8000000715255737,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.005"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(12.0,-8.0,11.041401863098145)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,-0.7071068286895752,0.7071068286895752)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.8000000715255737,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[255,255,255,63,0,0,144,65,0,0,128,63]}}}
     ]
 ),(
     entity: 7,
     components:[
-        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-18.0,-15.0,11.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(2.0,2.0,2.0)}}},
-        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.021"}},
-        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\817587ea28c13263e4bd6e609d80c027.mesh"}},
-        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-18.0,-15.0,11.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(2.0,2.0,2.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_status":1,"damping_angular":{"type":"f32","value":0.0},"damping_linear":{"type":"f32","value":0.0},"ccd_enable":false,"sleep_allow":false,"mass_extra":{"type":"f32","value":0.0},"inertia_extra":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.20000001788139343},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":0,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 4]>","list":[82,79,205,64]}}}
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-8.0,-8.5,5.5414018630981445)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.006"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7cb672017a09c141b05c204b8c235a74.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-8.0,-8.5,5.5414018630981445)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[255,255,255,63,0,0,192,63,0,0,144,64]}}}
     ]
 ),(
     entity: 8,
     components:[
-        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(15.020100593566895,18.34473419189453,20.004051208496094)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(5.715340614318848,5.715340614318848,5.715340614318848)}}},
-        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Torus"}},
-        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\13254763fa58c0e779d2013666e2d10f.mesh"}},
-        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(15.020100593566895,18.34473419189453,20.004051208496094)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(5.715340614318848,5.715340614318848,5.715340614318848)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_status":0,"damping_angular":{"type":"f32","value":0.0},"damping_linear":{"type":"f32","value":0.0},"ccd_enable":false,"sleep_allow":false,"mass_extra":{"type":"f32","value":0.0},"inertia_extra":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":0,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 4]>","list":[22,157,228,64]}}}
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(8.0,-8.5,5.5414018630981445)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.007"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7cb672017a09c141b05c204b8c235a74.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(8.0,-8.5,5.5414018630981445)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[255,255,255,63,0,0,192,63,0,0,144,64]}}}
     ]
 ),(
     entity: 9,
     components:[
-        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(0.0,0.0,-17.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(30.0,30.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.001"}},
-        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\455a186f059b12261a1ddcfbbc376371.mesh"}},
-        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(0.0,0.0,-17.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(30.0,30.0,1.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_status":1,"damping_angular":{"type":"f32","value":0.0},"damping_linear":{"type":"f32","value":0.0},"ccd_enable":false,"sleep_allow":false,"mass_extra":{"type":"f32","value":0.0},"inertia_extra":{"type":"glam::vec3::Vec3","value":(0.0,0.0,0.0)}}},
-        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[0,0,240,65,0,0,240,65,0,0,128,63]}}}
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(8.0,8.5,5.5414018630981445)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.008"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7cb672017a09c141b05c204b8c235a74.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(8.0,8.5,5.5414018630981445)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[255,255,255,63,0,0,192,63,0,0,144,64]}}}
+    ]
+),(
+    entity: 10,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-8.0,8.5,5.5414018630981445)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.009"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7cb672017a09c141b05c204b8c235a74.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-8.0,8.5,5.5414018630981445)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.19999998807907104,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[255,255,255,63,0,0,192,63,0,0,144,64]}}}
+    ]
+),(
+    entity: 11,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-20.541173934936523,-0.2666478157043457,11.186442375183105)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Point.001"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(-20.541173934936523,-0.2666478157043457,11.186442375183105)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
+        {"type":"bevy_pbr::light::Light","struct":{}}
+    ]
+),(
+    entity: 12,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(11.0,0.0,0.3999999761581421)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.010"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(11.0,0.0,0.3999999761581421)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[2,0,128,63,255,255,127,64,0,0,128,63]}}}
+    ]
+),(
+    entity: 13,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(13.0,0.0,0.7999999523162842)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.011"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(13.0,0.0,0.7999999523162842)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[2,0,128,63,255,255,127,64,0,0,128,63]}}}
+    ]
+),(
+    entity: 14,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(15.0,0.0,1.1999999284744263)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.012"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(15.0,0.0,1.1999999284744263)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[2,0,128,63,255,255,127,64,0,0,128,63]}}}
+    ]
+),(
+    entity: 15,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(17.0,0.0,4.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.013"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(17.0,0.0,4.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[2,0,128,63,255,255,127,64,0,0,128,63]}}}
+    ]
+),(
+    entity: 16,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(19.0,0.0,5.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.014"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(19.0,0.0,5.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[2,0,128,63,255,255,127,64,0,0,128,63]}}}
+    ]
+),(
+    entity: 17,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(21.0,0.0,6.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.015"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(21.0,0.0,6.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[2,0,128,63,255,255,127,64,0,0,128,63]}}}
+    ]
+),(
+    entity: 18,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(23.0,0.0,7.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.016"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(23.0,0.0,7.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[2,0,128,63,255,255,127,64,0,0,128,63]}}}
+    ]
+),(
+    entity: 19,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(25.0,0.0,8.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.017"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(25.0,0.0,8.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[2,0,128,63,255,255,127,64,0,0,128,63]}}}
+    ]
+),(
+    entity: 20,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(27.0,0.0,9.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.018"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(27.0,0.0,9.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[2,0,128,63,255,255,127,64,0,0,128,63]}}}
+    ]
+),(
+    entity: 21,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(29.0,0.0,10.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.019"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(29.0,0.0,10.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.10000002384185791,0.3999999761581421,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[2,0,128,63,255,255,127,64,0,0,128,63]}}}
+    ]
+),(
+    entity: 22,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(36.0,0.0,11.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.6000001430511475,0.9999999403953552,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Cube.020"}},
+        {"type":"blender_bevy_toolkit::blend_mesh::BlendMeshLoader","struct":{"path":"scenes\\meshes\\7042878e22affe96f55937594f4a7ff0.mesh"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(36.0,0.0,11.0)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(0.6000001430511475,0.9999999403953552,1.0)}}},
+        {"type":"blender_bevy_toolkit::rapier_physics::RigidBodyDescription","struct":{"body_type":1,"lock_translation":false,"lock_rotation_x":false,"lock_rotation_y":false,"lock_rotation_z":false,"gravity_scale":{"type":"f32","value":1.0},"angular_damping":{"type":"f32","value":0.0},"linear_damping":{"type":"f32","value":0.0},"ccd_enable":false}},
+        {"type":"blender_bevy_toolkit::rapier_physics::ColliderDescription","struct":{"friction":{"type":"f32","value":0.5},"restitution":{"type":"f32","value":0.5},"is_sensor":false,"density":{"type":"f32","value":0.5},"collider_shape":2,"collider_shape_data":{"type":"smallvec::SmallVec<[u8; 12]>","list":[3,0,192,64,255,255,31,65,0,0,128,63]}}}
+    ]
+),(
+    entity: 23,
+    components:[
+        {"type":"bevy_transform::components::global_transform::GlobalTransform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(24.420333862304688,15.64565658569336,6.278006076812744)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
+        {"type":"blender_bevy_toolkit::blend_label::BlendLabel","struct":{"name":"Point.002"}},
+        {"type":"bevy_transform::components::transform::Transform","struct":{"translation":{"type":"glam::vec3::Vec3","value":(24.420333862304688,15.64565658569336,6.278006076812744)},"rotation":{"type":"glam::quat::Quat","value":(0.0,0.0,0.0,1.0)},"scale":{"type":"glam::vec3::Vec3","value":(1.0,1.0,1.0)}}},
+        {"type":"bevy_pbr::light::Light","struct":{}}
     ]
 )]

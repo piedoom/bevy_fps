@@ -14,7 +14,7 @@ bevy_asset_ron = "0.2"
 ron = "*"
 serde = "*"
 bevy_rapier3d = { version = "0.11", features = [ "simd-stable" ] }
-blender_bevy_toolkit = {git="https://github.com/sdfgeoff/blender_bevy_toolkit"}
+blender_bevy_toolkit = {path="blend/blender_bevy_toolkit"}
 
 [dependencies.bevy]
 version = "0.5"

@@ -1,0 +1,7 @@
+{
+    "name": "Light",
+    "description": "Illuminates the scene",
+    "id": "light",
+    "struct": "bevy_pbr::light::Light",
+    "fields": []
+}

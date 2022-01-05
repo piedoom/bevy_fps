@@ -19,7 +19,7 @@ impl Default for Movement {
     fn default() -> Self {
         Self {
             direction: Default::default(),
-            pitch: Default::default(),
+            pitch: 90f32,
             yaw: Default::default(),
             roll: Default::default(),
             rotation_yaw: Default::default(),
